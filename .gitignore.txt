@@ -1,2 +1,2 @@
 ionic-docs
-Manual-Cracker_MBan_szi.docx
+tests
