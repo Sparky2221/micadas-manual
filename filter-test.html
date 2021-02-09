@@ -15,11 +15,6 @@
     }
 
 .filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
   text-align: center;
   margin: 2px;
   display: none;
@@ -31,27 +26,30 @@
 
 .container {
   margin-top: 20px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
-/* Style the buttons */
+/* Style the buttons 
+
 .btn {
-  border: none;
+ /* border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
+ /* background-color: #f1f1f1;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #ddd;
+  /*background-color: #ddd;
 }
 
 .btn.active {
-  background-color: #666;
+ /* background-color: #666;
   color: white;
 }
+   */
 </style>
+    </head>
     <body>
   <ion-app>
     <ion-header translucent>
@@ -64,42 +62,118 @@
 
     <ion-content fullscreen> 
 
-<h2>Filter DIV Elements</h2>
 
+<ion-list-header>Select device</ion-list-header>
 <div id="myBtnContainer">
+    <!--
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+-->
+    <ion-radio-group value="btn">
+    <ion-item>
+      <ion-label>Sunset</ion-label>
+        <ion-radio slot="start" class="btn active" onclick="filterSelection('Sunset')"> </ion-radio>
+    </ion-item>
+        <ion-item>
+      <ion-label>CHS</ion-label>
+        <ion-radio slot="start" class="btn active" onclick="filterSelection('CHS')"> </ion-radio>
+    </ion-item>
+        <ion-item>
+      <ion-label>Cracker</ion-label>
+        <ion-radio slot="start" class="btn active" onclick="filterSelection('Cracker')"> </ion-radio>
+    </ion-item>
+        <ion-item>
+      <ion-label>EA</ion-label>
+        <ion-radio slot="start" class="btn active" onclick="filterSelection('EA')"> </ion-radio>
+    </ion-item>
+    </ion-radio-group>
 </div>
 
       <ion-list>
         <ion-list-header>Day before measurement</ion-list-header>
-    
 <div class="container">
-  <div class="filterDiv cars"><ion-item>
+    <div class="filterDiv Cracker"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Collect air on Jungfraujoch</ion-label>
+          </ion-item>
+    </div>
+  <div class="filterDiv Sunset CHS EA Cracker"><ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap">Prepare sample list</ion-label>
           </ion-item>
     </div>
-  <div class="filterDiv colors fruits">
+  <div class="filterDiv Sunset CHS EA Cracker">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap">Save sample list on GIS-computer</ion-label>
           </ion-item>
     </div>
-  <div class="filterDiv cars">Volvo</div>
-  <div class="filterDiv colors">Red</div>
-  <div class="filterDiv cars animals">Mustang</div>
-  <div class="filterDiv colors">Blue</div>
-  <div class="filterDiv animals">Cat</div>
-  <div class="filterDiv animals">Dog</div>
-  <div class="filterDiv fruits">Melon</div>
-  <div class="filterDiv fruits animals">Kiwi</div>
-  <div class="filterDiv fruits">Banana</div>
-  <div class="filterDiv fruits">Lemon</div>
-  <div class="filterDiv animals">Cow</div>
+    <div class="filterDiv Sunset CHS EA Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Prepare magazine</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Run in EA</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Clean oven</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Scratch the ampoules</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Insert magazine</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Turn on He on CHS</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS EA">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Check valve position MICADAS prep. lab</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">create a MICADAS wake-up task</ion-label>
+          </ion-item>
+    </div>
+    <ion-list-header>Measurement day</ion-list-header>
+    <div class="filterDiv Sunset CHS EA Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">finalise task for wake up</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">clean oven</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Measure bottle blank</ion-label>
+          </ion-item>
+    </div>
 </div>
 </ion-list>
 </ion-content>
