@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MICADAS manual</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+   
+        
+<script type="text/javascript">
+$scope.listPref = [
+    {text: 'Cinema'},
+    {text: 'Sport'},
+    {text: 'It'} ,
+    {text: 'Music'},
+    {text: 'Theater'},
+    {text: 'Conference'}
+];
+
+$scope.checkItems = { }
+
+$scope.print = function() {
+    console.log($scope.checkItems);
+}
+
+$scope.save = function() {
+    var array = [];
+    for(i in $scope.checkItems) {
+        console.log($scope.checkItems[i]);
+        if($scope.checkItems[i] == true) {
+            array.push(i);
+        }
+    }
+    console.log(array);
+}
+</script>
+    
+    <style>
+    :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <ion-app>
+       <ion-header translucent>
+      <ion-toolbar>
+        <ion-title style="text-align:center">test</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content fullscreen>
+      <ion-list>
+        <ion-list-header>Day before measurement</ion-list-header>
+            <ion-item style="background-color: rgba(0,0,0,0); width:100%" > 
+     <ion-label> Add (10%) </ion-label> 
+      <ion-checkbox item-right class="checkbox-right" #checkbox 
+      (ionChange)="addService(checkbox.checked)"></ion-checkbox>
+</ion-item> 
+          
+           <ion-item style="background-color: rgba(0,0,0,0); width:100%" > 
+     <ion-label> Add (10%) </ion-label> 
+                <ion-checkbox [(ngModel)]="addService(checkbox.checked)"></ion-checkbox>
+</ion-item> 
+          
+          <ion-item style="background-color: rgba(0,0,0,0); width:100%"> 
+     <ion-label> Add (10%) </ion-label>
+              <ion-checkbox></ion-checkbox>
+</ion-item>
+         <ion-item style="background-color: rgba(0,0,0,0); width:100%" >
+          <ion-checkbox (ionChange)=“getSelected()”></ion-checkbox>
+              </ion-item>
+          
+          
+          <ion-item>
+          <ion-checkbox input type="checkbox" color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">MICADAS wake-up task</ion-label>
+          </ion-item>
+          
+          
+          <ion-item>
+          <ion-checkbox [checked]="checkbox" color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">MICADAS wake-up task</ion-label>
+          </ion-item>
+          
+          <ion-item>
+          <ion-checkbox  [checked]="checkBoxes[$index]" color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">MICADAS wake-up task III</ion-label>
+          </ion-item>
+          
+          <ion-item>
+          <ion-checkbox ngModel="checkbox" (ionChange)="checkbox()" color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">MICADAS wake-up task V</ion-label>
+          </ion-item>
+          
+          <ion-content>
+   <ion-checkbox ng-repeat="item in listPref"
+       ng-model="checkItems[item.text]" ng-change="print()">
+       {{ item.text }}
+   </ion-checkbox>
+   <button type="button" name="button" ng-click="save()">Save</button>
+</ion-content>
+          
+          
+         
+          
+        </ion-list>
+ </ion-content>
+  </ion-app>
+
+    
+    
+</body>
+    
+</html>

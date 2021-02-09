@@ -1,0 +1,1 @@
+addService(service : boolean) { if(service === true) { this._service = this._total * 10 / 100 } else { this._service = 0; } }
