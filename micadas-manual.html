@@ -41,10 +41,13 @@
 </div>
 <br>
     <!-- checklist -->
-        <ion-list>
-            <ion-list-header> <ion-label style="text-align:center"><b>Day before measurement</b></ion-label></ion-list-header>
+    <ion-list>
+      <br>
+      <ion-list-header> <ion-label style="text-align:center"><p style="border: 2px solid black;"><b>G:</b> GIS-Computer (LabVIEW) <br><b>M:</b> MICADAS-Computer (ACS) <br><b>S:</b> Sunset-Computer (OCEC1133Ox) <br><b>C:</b> CHS-Computer (LabVIEW)</p></ion-label></ion-list-header>
+      <br>
+      <ion-list-header> <ion-label style="text-align:center"><b>Day before measurement</b></ion-label></ion-list-header>
 <div class="container">
-  <div class="filterDiv Sunset EA Cracker"><ion-item>
+    <div class="filterDiv Sunset EA Cracker"><ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap">Prepare samples</ion-label>
           </ion-item>
@@ -252,19 +255,19 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Make sure V3 is found (green) (if necessary by changing the method)</ion-label>
-          </ion-item>
-    </div>
-    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
-    <ion-item>
-            <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap">Go to header 'Communication'. Computer cards should all state 'DLN_RES_SUCCESS' (otherwise stop and restart the program)</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Go back to header 'Control panel'. Check that button <i>'Automatic on/off'</i> is green</ion-label>
+            <ion-label  class="ion-text-wrap">Go back to header 'Control panel'. Make sure V3 is found (green) (if necessary by changing the method)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Check that button <i>'Automatic on/off'</i> is green</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
@@ -408,19 +411,19 @@
     <div class="filterDiv Sunset">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>G:</b> Clean trap 1-2 times by clicking <i>'Clean trap'</i> (tab 'Sunset')</ion-label>
+            <ion-label  class="ion-text-wrap"><b>G:</b> Go back to header 'Control panel'. Clean trap 1-2 times by clicking <i>'Clean trap'</i> (tab 'Sunset')</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv CHS">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>G:</b> Clean trap 1-2 times by clicking <i>'Clean trap'</i> (tab 'Acid')</ion-label>
+            <ion-label  class="ion-text-wrap"><b>G:</b> Go back to header 'Control panel'. Clean trap 1-2 times by clicking <i>'Clean trap'</i> (tab 'Acid')</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv EA">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>G:</b> Clean trap 1-2 times by clicking <i>'Clean trap'</i> (tab 'EA')</ion-label>
+            <ion-label  class="ion-text-wrap"><b>G:</b> Go back to header 'Control panel'. Clean trap 1-2 times by clicking <i>'Clean trap'</i> (tab 'EA')</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker">
@@ -732,6 +735,12 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>M:</b> To show results click on '<span>&#8285;</span>' of the current task and choose <i>'Result'</i>. Make sure <i>'Live'</i> is ticked.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>G:</b> Switch V0 to AMS as soon as ACS states 'Measuring' and 2-3 cycles have been measured</ion-label>
           </ion-item>
     </div>
@@ -739,12 +748,6 @@
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>G:</b> Click <i>'GO'</i></ion-label>
-          </ion-item>
-    </div>
-    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
-    <ion-item>
-            <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>M:</b> To show results click on '<span>&#8285;</span>' of the current task and choose <i>'Result'</i>. Make sure <i>'Live'</i> is ticked.</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
@@ -1109,6 +1112,108 @@
             <ion-label  class="ion-text-wrap">If pressure <span>&#61;</span> 0 (ampoule not cracked or empty) <span>&#8594;</span> click <i>'correct'</i></ion-label>
           </ion-item>
     </div>
+    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 100px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Try to crack ampoule by manually pressing and releasing <i>'Crack'</i> several times.</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 150px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">If it works the pressure rises. If you are confident in your own sample mass (excel file), write that value and click <i>'SET'</i>. The procedure will continue as usually. If you are not confident about your m<sub>c</sub>, read the pressure and write down the mass as m <span>&#61;</span> 0.44<span>&#215;</span>pressure, click <i>'SET'</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 150px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">If it does not work ,you need to scratch the ampoule again. To do so, click <i>'open'</i>, remove the cracker, and scratch the ampoule again. Put the cracker back, press <i>'open'</i> again and manually flush the cracker with He 3 times. With syringe in home position, pump the line until V8 (closed), correct pressure offsets of both sensors and then close the pump and V2. Press and release <i>'Crack'</i>, and if it works, proceed as described in the previous bullet point.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Prepare the next cracker magazine before the first magazine reaches position 8. Make sure that there are no glass particles anymore in the tubes (Dust off spray)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">After cracking and loading sample 8, a message will pop up, that the last position is reched. <b>FIRST</b>, take the measured magazine out and put the new magazine, <b>THEN</b> confirm the message.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">For large samples (<span>&#62;</span>threshold (85&mu;g C)), the GIS software might dilute the sample too much. You may have to load these samples manually (same as for std/bk).</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">For all samples: check that current can go high enough (<span>&#8764;</span>12). Adjust syringe pressure and C flow accordingly.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">For <b>last</b> sample: click <i>'stop after next sample'</i>. GIS will stop automatically and you do not have to restart the program before measuring std/bk.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Measure Std and Bk after the samples:</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>G:</b> When reaching the last sample, click <i>'stop after next/this sample'</i>.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>M:</b> Click '<span>&#8285;</span>' on the gas measurement task and choose <i>'Duplicate'</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>M:</b> When the last sample has been measured, click '<span>&#8285;</span>' again on the current task and choose <i>'Finalize'</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>G:</b> After the measurement has finished, you will have to wait a few minutes, before the GIS is stopped properly. If this does not work, you will have to restart LabVIEW again:</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 100px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>G:</b> Click <i>'Stop program'</i>. If this does not work, force the program to stop (red button top left).</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 100px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>G:</b> Start LabVIEW again as in the start-up procedure. You may have to restart the program twice. Make sure, that you stop LabVIEW without force stop the second time.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 100px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>G:</b> Go to header 'Communication'. Click <i>'establish connection'</i>. Then click <i>'TCP test'</i> and write 'getstatus' in the field next to it. The answer should be <b>0/0</b>. If this is fulfilled, unclick <i>'TCP test'</i> (turns blue). If this does not work, restart the ACS service and try again.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Measure Std and Bk (usually 1 Std and 2 Bk). For procedure see above.</ion-label>
+          </ion-item>
+    </div>
     <div class="filterDiv Sunset CHS EA Cracker">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
@@ -1181,6 +1286,36 @@
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>M:</b> Reduce Cs temperature to 115<span>&#8451;</span></i>.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Insert new magazine if one has already been prepared:</i>.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker" style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>M:</b> Choose 'Sample Changer' on Menu panel</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker" style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>M:</b> Click <i>'OUT & VENT'</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker" style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Physically change the magazine</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker" style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>M:</b> Click <i>'IN'</i></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker">
