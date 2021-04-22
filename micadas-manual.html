@@ -7,6 +7,11 @@
   <title>MICADAS manual</title>
 <link rel="stylesheet" href="core/css/ionic.bundle.css">
 <link rel="stylesheet" href="micadas-manual-style.css">
+<script type="module">
+import { popoverController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js'; 
+window.popoverController = popoverController;
+</script>
+
 </head>
 <body>
   <ion-app>
@@ -17,7 +22,7 @@
     </ion-header>
 
 <ion-content fullscreen>
-<!-- device selection -->
+  <!-- device selection -->
 <ion-list-header> <ion-label style="text-align:center"><strong>Select device</strong></ion-label></ion-list-header>
 <div id="myBtnContainer">
     <ion-radio-group value="btn">
@@ -42,9 +47,17 @@
 <br>
     <!-- checklist -->
     <ion-list>
+      <!--
       <br>
       <ion-list-header> <ion-label style="text-align:center"><p style="border: 2px solid black;"><b>G:</b> GIS-Computer (LabVIEW) <br><b>M:</b> MICADAS-Computer (ACS) <br><b>S:</b> Sunset-Computer (OCEC1133Ox) <br><b>C:</b> CHS-Computer (LabVIEW) <br><b>A:</b> AGE-Computer (VarioMICRO)</p></ion-label></ion-list-header>
       <br>
+-->
+
+  <ion-button expand="block">Device info</ion-button>
+  <ion-popover-controller></ion-popover-controller>
+
+<br />
+
       <ion-list-header> <ion-label style="text-align:center"><b>Day before measurement</b></ion-label></ion-list-header>
 <div class="container">
     <div class="filterDiv Sunset EA Cracker"><ion-item>
