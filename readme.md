@@ -13,6 +13,6 @@ This app was created by [Jan Strähl](mailto:jan.straehl@dcb.unibe.ch) and [Mart
 
 ### License
 
-Sunset calc is released under the [MIT License](./LICENCE.txt).
+:white_check_mark: MICADAS manual is released under the [MIT License](./LICENCE.txt).
 
 
