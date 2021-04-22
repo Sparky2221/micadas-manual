@@ -40,7 +40,7 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
+/*
 let currentPopover = null;
 
   const buttons = document.querySelectorAll('ion-button');
@@ -78,3 +78,4 @@ let currentPopover = null;
       `;
     }
   });
+  */
