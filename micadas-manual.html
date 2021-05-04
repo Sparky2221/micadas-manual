@@ -79,10 +79,106 @@
               <ion-label  class="ion-text-wrap">Put an empty exetainer in position 42 of the autosampler</ion-label>
             </ion-item>
     </div>
-    <div class="filterDiv Sunset CHS EA Cracker">
+    <div class="filterDiv Sunset CHS Cracker">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Create LAMA-Numbers for samples and standards</ion-label>
+            <ion-label  class="ion-text-wrap">Create LaMa-Numbers for samples and standards</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>M:</b> Create LaMa-Numbers for samples and standards</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 25px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Create an excel list without headers and save it in <i>C:\MICADAS\Gas Measurements\</i> with the .xls file extension (not .xlsx). Do not include the standards in this list but create the standard numbers manually.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 25px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Open the file 'results logbook3.xlsm' in <i>C:\MICADAS</i>' and use it to create a file for LaMa:</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 50px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Go to header 'developer'</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 50px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Go to header 'Visual Basic' (window opens)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 50px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Go to Forms folder <span>&#8594;</span> run UserForm1 (double-click, user interface opens) <span>&#8594;</span> click run (green button on top)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 50px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click <i>'sample list'</i>, then <i>'LaMa<span>&#38;</span>EA file'</i> (window explorer opens automatically)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 50px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Go to <i>C:\MICADAS\Gas Measurement\ (sample list file folder)</i> and select sample list with sample names and masses</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 50px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Pop-up windows will ask for various information:</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 75px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">sample mass (column B <span>&#61;</span> 2)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 75px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">sample name (column A <span>&#61;</span> 1). The sample name is the "Code" name in LaMa and Bats, it is the userlabel.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 75px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">sample type (no need to specify, type -1)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 75px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">first data row (no header <span>&#61;</span> 1)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 50px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">The program asks the database for the next available sample number and will assign it to the first sample continuing until the last sample in the excel output. The assignment is not actually done in the database yet.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 50px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">The output excel file is automatically created with a new name that keeps the old name prefixed by 'LamaImport'. (Column I: mass; column J: pre (blank) or number; column Q: method)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 25px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Read the just created import file with LaMa to import and save it into the data base:</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 50px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Open LaMa and select the desired costumer and project</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 50px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Go to tab 'File' and choose 'Import file'.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA" style="padding:0px 0px 0px 50px;"><ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Choose the previously created LamaImport<span>&#95;</span>Samplelist. The samples should show in LaMa.</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS">
@@ -311,6 +407,60 @@
             <ion-label  class="ion-text-wrap">Change flow to 105 mL<span>&#47;</span>min</ion-label>
           </ion-item>
     </div>
+    <div class="filterDiv EA">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>A:</b> Fill out the EA sample sheet (copy and paste the output information from the 'LamaImport' file or follow the procedure as decribed hereinafter):</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Fill out the sample and standard numbers (as created in LaMa) into the column 'Name'</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Write an estimated mass vlaue or any value different from zero in the column 'Weight'</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Select the method <i>'Gary<span>&#95;</span>new50s'</i> in the column 'Method'</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">If a flush/cleaning run is desired between two sample runs, then insert an additional line each between two samples:</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Write <i>'Pre'</i> in the column 'Name'</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Write any weight (e.g. 1) in the column 'Weight'</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Select the method <i>'Blank<span>&#95;</span>Gary'</i> in the column 'Method'</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv EA"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">If the name of the next sample is 'End', the LabVIEW will trigger the sleeping down of the EA, the LabVIEW measurement stops and the magazine position will be changed to home position.</ion-label>
+          </ion-item>
+    </div>
     <div class="filterDiv Sunset CHS EA Cracker">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
@@ -428,7 +578,7 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Switch V7 to <i>'ON'</i> (has to be on as soon as temperature of ion source is above 115°C!)</ion-label>
+            <ion-label  class="ion-text-wrap">Switch V7 to <i>'ON'</i> (has to be on as soon as temperature of ion source is above 115span>&#8451;</span>!)</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
@@ -734,7 +884,7 @@
     <div class="filterDiv Sunset"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>S:</b> Choose <i>'3600s He flush'</i> as parameter file</ion-label>
+            <ion-label  class="ion-text-wrap"><b>S:</b> Choose <i>'3600s He flush'</i> as parameter file (in folder 'Sunset Software <span>&#62;</span> Parameters')</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset"  style="padding:0px 0px 0px 25px;">
@@ -764,13 +914,13 @@
     <div class="filterDiv Sunset CHS EA"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Create one target for each bottle standard in LAMA (1621 (oxaII) <span>&#38;</span> 1216 (blank))</ion-label>
+            <ion-label  class="ion-text-wrap">Create one target for each bottle standard in LaMa (1621 (oxaII) <span>&#38;</span> 1216 (blank))</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Create four targets for each bottle standard in LAMA (1621 (oxaII) <span>&#38;</span> 1216 (blank))</ion-label>
+            <ion-label  class="ion-text-wrap">Create four targets for each bottle standard in LaMa (1621 (oxaII) <span>&#38;</span> 1216 (blank))</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA"  style="padding:0px 0px 0px 25px;">
@@ -890,7 +1040,7 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>M:</b> Set target position (start at 2 (!) for first measurement and increase by 1 for each run) and type target ID (as created in LAMA)</ion-label>
+            <ion-label  class="ion-text-wrap"><b>M:</b> Set target position (start at 2 (!) for first measurement and increase by 1 for each run) and type target ID (as created in LaMa)</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
@@ -980,7 +1130,7 @@
     <div class="filterDiv Sunset"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>S:</b> Choose path of 'parameter file' (in folder Sunset Software > Parameters)</ion-label>
+            <ion-label  class="ion-text-wrap"><b>S:</b> Choose path of 'parameter file' (in folder 'Sunset Software <span>&#62;</span> Parameters')</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset"  style="padding:0px 0px 0px 75px;">
@@ -1130,25 +1280,25 @@
     <div class="filterDiv Sunset"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Set 'pre-trapping time' to <b>130s</b></ion-label>
+            <ion-label  class="ion-text-wrap">Set 'Pre trapping' to <b>130s</b></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Set 'pre-trapping time' to <b>0s</b></ion-label>
+            <ion-label  class="ion-text-wrap">Set 'Pre trapping' to <b>0s</b></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Set 'trapping time' to <b>240s</b> (TC/EC) or <b>335s</b> (OC)</ion-label>
+            <ion-label  class="ion-text-wrap">Set 'Trap sampling time' to <b>240s</b> (TC/EC) or <b>335s</b> (OC)</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Set 'trapping time' to <b>180s</b></ion-label>
+            <ion-label  class="ion-text-wrap">Set 'Trap sampling time' to <b>180s</b></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA"  style="padding:0px 0px 0px 25px;">
