@@ -44,7 +44,7 @@
     <!-- checklist -->
     <ion-list>
            <br>
-      <ion-list-header> <ion-label style="text-align:center"><p><b>G:</b> GIS-Computer (LabVIEW) <br><b>M:</b> MICADAS-Computer (ACS) <br><b>S:</b> Sunset-Computer (OCEC1133Ox) <br><b>C:</b> CHS-Computer (LabVIEW) <br><b>A:</b> AGE-Computer (VarioMICRO)</p></ion-label></ion-list-header>
+      <ion-list-header> <ion-label style="text-align:center"><p><b>G:</b> GIS-Computer (LabVIEW) <br><b>M:</b> MICADAS-Computer (ACS) <br><b>S:</b> Sunset-Computer (OCEC1133Ox) <br><b>C:</b> CHS-Computer (LabVIEW) <br><b>A:</b> AGE-Computer (VarioMICRO) <br><b>L:</b> LICOR-Computer (LI-COR LI-8x0_v.1.0.2)</p></ion-label></ion-list-header>
       <br>
 
       <ion-list-header> <ion-label style="text-align:center"><b>Day before measurement</b></ion-label></ion-list-header>
@@ -279,6 +279,12 @@
     <div class="filterDiv CHS">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Plug in LICOR</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap">Change water traps of CHS and increase the helium flow to <span>&#8764;</span>55 mL/min</ion-label>
           </ion-item>
     </div>
@@ -495,7 +501,7 @@
     <div class="filterDiv Sunset CHS EA Cracker">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Check if capillary from GIS box to ion source is connected</ion-label>
+            <ion-label  class="ion-text-wrap">Check that capillary from GIS box to ion source is connected</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker">
@@ -549,19 +555,19 @@
     <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Select DNRS-ini-File in the pop-up window</ion-label>
+            <ion-label  class="ion-text-wrap">Select CHS-ini-File ('GIS-carbonate-120mm') in the pop-up window and click <i>'OK'</i></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv EA"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Select EA-ini-File in the pop-up window</ion-label>
+            <ion-label  class="ion-text-wrap">Select EA-ini-File in the pop-up window and click <i>'OK'</i></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Select Cracker-ini-File in the pop-up window</ion-label>
+            <ion-label  class="ion-text-wrap">Select Cracker-ini-File in the pop-up window and click <i>'OK'</i></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
@@ -651,7 +657,7 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Click '<span>&#xf406;</span> and <i>'Take control'</i></ion-label>
+            <ion-label  class="ion-text-wrap">Click on the user icon and choose <i>'Take control'</i></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
@@ -729,7 +735,7 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Click <i>'Establish connection'</i>. Then click <i>'TCP test'</i> and write 'getstatus' in the field next to it. The answer should be <b>0/0</b>. If this is fulfilled, unclick <i>'TCP test'</i> (turns blue)</ion-label>
+            <ion-label  class="ion-text-wrap">Click <i>'Establish connection'</i>. Then click <i>'TCP test'</i>, write 'getstatus' in the field 'Send command to Squirrel' and click in the field 'Squirrel response log'. The answer should be <b>0/0</b>. If this is fulfilled, unclick <i>'TCP test'</i> (turns blue)</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
@@ -1233,6 +1239,12 @@
     <div class="filterDiv CHS">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Open TightVNC (pw: <i>helloc14</i>) to see CHS-Screen (CHS-Computer=13)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>C:</b> Click <i>'Go Home'</i> and leave the syringe in position 'up'</ion-label>
           </ion-item>
     </div>
@@ -1252,12 +1264,6 @@
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>G:</b> Go to header 'Communication' and click <i>'Autosampler on'</i> (the light next to 'PAL COM state' should turn green)</ion-label>
-          </ion-item>
-    </div>
-    <div class="filterDiv CHS">
-    <ion-item>
-            <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>G:</b> Go to header 'Settings'. Click <i>'Secondary'</i> (turns green) and <i>'Using Single'</i> (should turn purple and changes to 'USING DOUBLE NEEDLE') in the box with the Autosampler parameter.</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv CHS">
@@ -1527,6 +1533,66 @@
     <div class="filterDiv CHS">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Open TightVNC (pw: <i>helloc14</i>) to see LICOR-Screen (LICOR-Computer=17)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>L:</b> Start recording data:</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Open the program 'LI-COR LI-8x0_v.1.0.2' (can be found on the desktop)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click <i>'Connect'</i>. Then choose 'Connect to: 0 - COM5 LI-850', untick 'Manual port', set 'Data rate' to <b>0.5</b> and confirm by clicking <i>'Connect'</i> again.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click the button <i>'Setup Login'</i> and choose the following logging settings:</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click <i>'Select file'</i> and choose a file name (<i>YYYY-MM-DD_HH_MM_Description</i>) in the pop-up window (files should be saved locally in the folder 'Documents')</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">For 'File headings' and 'Log values' leave all options ticked</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Choose <i>'Tab'</i> as 'Field delimiter'</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Set 'Log rate (seconds)' to <b>0.5</b> and close the window by clicking <i>'Close'</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click the button <i>'Start Logging'</i> (make sure that the 'Cell Temperature' has reached 51.5<span>&#8451;</span>)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>G:</b> Check again all settings. Then go to header 'Control panel', choose tap 'Acid' and click <i>'Start Method'</i>.</ion-label>
           </ion-item>
     </div>
@@ -1738,6 +1804,18 @@
             <ion-label  class="ion-text-wrap"><b>S:</b> Click on <i>'Standby'</i></ion-label>
           </ion-item>
     </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>L:</b> Click <i>'Stop'</i> to stop the logging and close the LICOR program</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Unplug the LICOR</ion-label>
+          </ion-item>
+    </div>
     <div class="filterDiv Sunset CHS EA Cracker">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
@@ -1887,12 +1965,6 @@
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>M/S:</b> Close TightVNC</ion-label>
-          </ion-item>
-    </div>
-    <div class="filterDiv CHS">
-    <ion-item>
-            <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Empty water trap (volumetric flask) of CHS and reinstall it.</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv CHS">
