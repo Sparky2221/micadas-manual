@@ -44,7 +44,7 @@
     <!-- checklist -->
     <ion-list>
            <br>
-      <ion-list-header> <ion-label style="text-align:center"><p><b>G:</b> GIS-Computer (LabVIEW) <br><b>M:</b> MICADAS-Computer (ACS) <br><b>S:</b> Sunset-Computer (OCEC1133Ox) <br><b>C:</b> CHS-Computer (LabVIEW) <br><b>A:</b> AGE-Computer (VarioMICRO)</p></ion-label></ion-list-header>
+      <ion-list-header> <ion-label style="text-align:center"><p><b>G:</b> GIS-Computer (LabVIEW) <br><b>M:</b> MICADAS-Computer (ACS) <br><b>S:</b> Sunset-Computer (OCEC1133Ox) <br><b>C:</b> CHS-Computer (LabVIEW) <br><b>A:</b> AGE-Computer (VarioMICRO) <br><b>L:</b> LICOR-Computer (LI-COR LI-8x0_v.1.0.2)</p></ion-label></ion-list-header>
       <br>
 
       <ion-list-header> <ion-label style="text-align:center"><b>Day before measurement</b></ion-label></ion-list-header>
@@ -256,9 +256,16 @@
     <div class="filterDiv Sunset CHS EA Cracker" style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Click <i>'+'</i>, choose <i>'Wake up'</i> and set time for wake up on day of measurement (60' before you arrive)</ion-label>
+            <ion-label  class="ion-text-wrap">Click <i>'+'</i>, choose <i>'System'</i> and then <i>'Wake up'</i> and set time for wake up on day of measurement (60' before you arrive)</ion-label>
           </ion-item>
     </div>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker" style="padding:0px 0px 0px 25px;">
+      <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Set stabilization time to 5 min and confirm by clicking <i>'OK'</i></ion-label>
+          </ion-item>
+        </div>
     <div class="filterDiv Sunset CHS EA Cracker" style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
@@ -269,6 +276,12 @@
     <ion-list-header> <ion-label style="text-align:center"><b>Measurement day</b></ion-label></ion-list-header>
     <br>
     <ion-list-header> <ion-label style="text-align:center"><i>Starting up the system</i></ion-label></ion-list-header>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Plug in LICOR</ion-label>
+          </ion-item>
+    </div>
     <div class="filterDiv CHS">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
@@ -488,7 +501,7 @@
     <div class="filterDiv Sunset CHS EA Cracker">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Check if capillary from GIS box to ion source is connected</ion-label>
+            <ion-label  class="ion-text-wrap">Check that capillary from GIS box to ion source is connected</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker">
@@ -536,25 +549,25 @@
     <div class="filterDiv Sunset"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Select Sunset-ini-file in the pop-up window</ion-label>
+            <ion-label  class="ion-text-wrap">Select Sunset-ini-file ('131010_1858GIS-SUNSET.ini') in the pop-up window and click <i>'OK'</i></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Select DNRS-ini-File in the pop-up window</ion-label>
+            <ion-label  class="ion-text-wrap">Select CHS-ini-File ('GIS-carbonate-120mm') in the pop-up window and click <i>'OK'</i></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv EA"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Select EA-ini-File in the pop-up window</ion-label>
+            <ion-label  class="ion-text-wrap">Select EA-ini-File in the pop-up window and click <i>'OK'</i></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Select Cracker-ini-File in the pop-up window</ion-label>
+            <ion-label  class="ion-text-wrap">Select Cracker-ini-File in the pop-up window and click <i>'OK'</i></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
@@ -572,7 +585,7 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Check that button <i>'Automatic on/off'</i> is green</ion-label>
+            <ion-label  class="ion-text-wrap">Check that the <i>'Automatic off'</i> button is green</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
@@ -620,7 +633,43 @@
     <div class="filterDiv Sunset CHS EA Cracker">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>M:</b> Click '<span>&#9776;</span>' and <i>'Restart Service'</i> (after restarting, start and finalize the automatically created wake up task)</ion-label>
+            <ion-label  class="ion-text-wrap"><b>M:</b> Restart the service:</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click '<span>&#9776;</span>' and <i>'Restart Service'</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Confirm the warning message by clicking <i>'Yes'</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Reload the webpage several times to get connection again</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click on the user icon and choose <i>'Take control'</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Go to the task list and click <i>'Start'</i> to start the automatically created wake up task</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click '<span>&#8942;</span>' of the wake up task and choose <i>'Finalize'</i> (the system should now be in state 'Ready')</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker">
@@ -638,7 +687,7 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Click on '<span>&#8942;</span>', <i>'show'</i> and <i>'apply'</i> (probably you have to take control first)</ion-label>
+            <ion-label  class="ion-text-wrap">Click on '<span>&#8942;</span>', <i>'show'</i> and <i>'apply'</i></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker">
@@ -656,7 +705,7 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Type magazine number (C<i>YYMMDDini</i>G) and cycle time (10s), confirm by clicking <i>'OK'</i></ion-label>
+            <ion-label  class="ion-text-wrap">Type magazine number (C<i>YYMMDDini</i>G ('ini' are your initials)) and cycle time (10s), confirm by clicking <i>'OK'</i></ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
@@ -680,13 +729,13 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Check if the right IP address is filled in (<i>130.92.107.74</i>)</ion-label>
+            <ion-label  class="ion-text-wrap">Make sure that the right IP address (<i>130.92.107.74</i>) is written in the field 'Computer name (soproni)' </ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Click <i>'establish connection'</i>. Then click <i>'TCP test'</i> and write 'getstatus' in the field next to it. The answer should be <b>0/0</b>. If this is fulfilled, unclick <i>'TCP test'</i> (turns blue)</ion-label>
+            <ion-label  class="ion-text-wrap">Click <i>'Establish connection'</i>. Then click <i>'TCP test'</i>, write 'getstatus' in the field 'Send command to Squirrel' and click in the field 'Squirrel response log'. The answer should be <b>0/0</b>. If this is fulfilled, unclick <i>'TCP test'</i> (turns blue)</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
@@ -824,7 +873,7 @@
     <div class="filterDiv Sunset">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>S:</b> Tick <i>'show valve value table'</i> and click <i>'Auto zero flows IDLE only'</i> in the pop-up window</ion-label>
+            <ion-label  class="ion-text-wrap"><b>S:</b> Tick <i>'show valve value table'</i> and click <i>'Auto Zero Flows - IDLE only'</i> in the pop-up window</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset">
@@ -914,18 +963,6 @@
     <div class="filterDiv Sunset CHS EA"  style="padding:0px 0px 0px 25px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Create one target for each bottle standard in LaMa (1621 (oxaII) <span>&#38;</span> 1216 (blank))</ion-label>
-          </ion-item>
-    </div>
-    <div class="filterDiv Cracker"  style="padding:0px 0px 0px 25px;">
-    <ion-item>
-            <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Create four targets for each bottle standard in LaMa (1621 (oxaII) <span>&#38;</span> 1216 (blank))</ion-label>
-          </ion-item>
-    </div>
-    <div class="filterDiv Sunset CHS EA"  style="padding:0px 0px 0px 25px;">
-    <ion-item>
-            <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>G:</b> Flush system with bottle standards (3 times):</ion-label>
           </ion-item>
     </div>
@@ -938,13 +975,13 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Go to tap 'tuning' (header 'Control panel')</ion-label>
+            <ion-label  class="ion-text-wrap">Go header 'Control panel' and then choose the tap 'tuning' (confirm by clicking <i>'OK'</i>)</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Select the corresponding gas in the dropdown menu 'Combo box' (Ref. gas 1 (oxII) or (blank), resp.)</ion-label>
+            <ion-label  class="ion-text-wrap">Select the corresponding gas in the dropdown menu 'Combo box' (Ref. gas 1 (oxII) or Ref. gas 2 (blank), resp.)</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
@@ -1010,7 +1047,7 @@
     <div class="filterDiv Cracker"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Click <i>'Home position'</i> and close V1.</ion-label>
+            <ion-label  class="ion-text-wrap">Click <i>'Home position'</i> and close V1</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
@@ -1037,10 +1074,22 @@
             <ion-label  class="ion-text-wrap"><b>M:</b> Click '<span>&#8285;</span>' of gas measurement task, choose <i>'Measure manually'</i></ion-label>
           </ion-item>
     </div>
-    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
+    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>M:</b> Set target position (start at 2 (!) for first measurement and increase by 1 for each run) and type target ID (as created in LaMa)</ion-label>
+            <ion-label  class="ion-text-wrap"><b>M:</b> Type target ID of the last measured bottle standard (1621 for oxaII <span>&#38;</span> 1216 for blank, respectively) and click <i>'Create Next'</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>M:</b> Set target position (start at 2 (!) for first measurement and increase by 1 for each run)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>M:</b> Click <i>'OK'</i> to start the measurement</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 25px;">
@@ -1070,7 +1119,7 @@
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>M:</b> Click '<span>&#8285;</span>' on the gas measurement task and choose <i>'Duplicate'</i></ion-label>
+            <ion-label  class="ion-text-wrap"><b>M:</b> Click '<span>&#8285;</span>' on the gas measurement task and choose <i>'Duplicate'</i> (confirm by clicking <i>'OK'</i>)</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset CHS EA Cracker"  style="padding:0px 0px 0px 50px;">
@@ -1124,7 +1173,31 @@
     <div class="filterDiv Sunset"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Place standard in oven</ion-label>
+            <ion-label  class="ion-text-wrap">Do a TC dummy run (to circumvent the different calibration peak of the first run)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset"  style="padding:0px 0px 0px 75px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Switch manual valve (black) to vent</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset"  style="padding:0px 0px 0px 75px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>S:</b> Choose path of 'parameter file' (in folder 'Sunset Software <span>&#62;</span> Parameters'): <i>'TC_withTempOffsets_xxxxxxxx.txt'</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset"  style="padding:0px 0px 0px 75px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click 'Start Analysis'</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Place standard in oven as soon as dummy TC run has finished</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset"  style="padding:0px 0px 0px 50px;">
@@ -1154,13 +1227,19 @@
     <div class="filterDiv Sunset"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Check that manual valve (black) is switched to GIS</ion-label>
+            <ion-label  class="ion-text-wrap">Switch manual valve (black) to GIS</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv Sunset"  style="padding:0px 0px 0px 50px;">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>S:</b> Choose 'Punch Area' of filter (for standards choose <i>'1 sq cm'</i>)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Open TightVNC (pw: <i>helloc14</i>) to see CHS-Screen (CHS-Computer=13)</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv CHS">
@@ -1185,12 +1264,6 @@
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>G:</b> Go to header 'Communication' and click <i>'Autosampler on'</i> (the light next to 'PAL COM state' should turn green)</ion-label>
-          </ion-item>
-    </div>
-    <div class="filterDiv CHS">
-    <ion-item>
-            <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>G:</b> Go to header 'Settings'. Click <i>'Secondary'</i> (turns green) and <i>'Using Single'</i> (should turn purple and changes to 'USING DOUBLE NEEDLE') in the box with the Autosampler parameter.</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv CHS">
@@ -1460,6 +1533,66 @@
     <div class="filterDiv CHS">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Open TightVNC (pw: <i>helloc14</i>) to see LICOR-Screen (LICOR-Computer=17)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>L:</b> Start recording data:</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Open the program 'LI-COR LI-8x0_v.1.0.2' (can be found on the desktop)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click <i>'Connect'</i>. Then choose 'Connect to: 0 - COM5 LI-850', untick 'Manual port', set 'Data rate' to <b>0.5</b> and confirm by clicking <i>'Connect'</i> again.</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click the button <i>'Setup Login'</i> and choose the following logging settings:</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click <i>'Select file'</i> and choose a file name (<i>YYYY-MM-DD_HH_MM_Description</i>) in the pop-up window (files should be saved locally in the folder 'Documents')</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">For 'File headings' and 'Log values' leave all options ticked</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Choose <i>'Tab'</i> as 'Field delimiter'</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 50px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Set 'Log rate (seconds)' to <b>0.5</b> and close the window by clicking <i>'Close'</i></ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS"  style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click the button <i>'Start Logging'</i> (make sure that the 'Cell Temperature' has reached 51.5<span>&#8451;</span>)</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>G:</b> Check again all settings. Then go to header 'Control panel', choose tap 'Acid' and click <i>'Start Method'</i>.</ion-label>
           </ion-item>
     </div>
@@ -1671,6 +1804,18 @@
             <ion-label  class="ion-text-wrap"><b>S:</b> Click on <i>'Standby'</i></ion-label>
           </ion-item>
     </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap"><b>L:</b> Click <i>'Stop'</i> to stop the logging and close the LICOR program</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv CHS">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Unplug the LICOR</ion-label>
+          </ion-item>
+    </div>
     <div class="filterDiv Sunset CHS EA Cracker">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
@@ -1740,7 +1885,26 @@
     <div class="filterDiv Sunset CHS EA Cracker">
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap"><b>M:</b> If there is a measurement planned for the next day: click <i>'+'</i>, <i>'System'</i> and <i>'Wake up'</i>. Set the time when the system should start to wake up. Then click <i>'Start'</i> in the task list.</ion-label>
+            <ion-label  class="ion-text-wrap"><b>M:</b> If there is a measurement planned for the next day: Create task to wake up the system the next morning</ion-label>
+          </ion-item>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker" style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click <i>'+'</i>, choose <i>'System'</i> and then <i>'Wake up'</i> and set time for wake up on day of measurement (60' before start of measurement)</ion-label>
+          </ion-item>
+    </div>
+    </div>
+    <div class="filterDiv Sunset CHS EA Cracker" style="padding:0px 0px 0px 25px;">
+      <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Set stabilization time to 5 min and confirm by clicking <i>'OK'</i></ion-label>
+          </ion-item>
+        </div>
+    <div class="filterDiv Sunset CHS EA Cracker" style="padding:0px 0px 0px 25px;">
+    <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label  class="ion-text-wrap">Click <i>'Start'</i> in the task list to start the task</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv EA">
@@ -1801,12 +1965,6 @@
     <ion-item>
             <ion-checkbox color="primary" slot="start"></ion-checkbox>
             <ion-label  class="ion-text-wrap"><b>M/S:</b> Close TightVNC</ion-label>
-          </ion-item>
-    </div>
-    <div class="filterDiv CHS">
-    <ion-item>
-            <ion-checkbox color="primary" slot="start"></ion-checkbox>
-            <ion-label  class="ion-text-wrap">Empty water trap (volumetric flask) of CHS and reinstall it.</ion-label>
           </ion-item>
     </div>
     <div class="filterDiv CHS">
