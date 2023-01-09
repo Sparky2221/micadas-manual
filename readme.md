@@ -9,7 +9,7 @@ This manual is a simple mobile friendly web application for operating the Mini C
 
 ### Info
 
-This app was created by [Jan Strähl](mailto:jan.straehl@dcb.unibe.ch) and [Martin Rauber](https://martin-rauber.com). 
+This app was created by [Jan Strähl](mailto:jan.straehl@unibe.ch) and [Martin Rauber](https://martin-rauber.com). 
 
 ### License
 
